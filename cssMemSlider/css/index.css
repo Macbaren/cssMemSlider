@@ -1,0 +1,102 @@
+@import url('./radiobutton.css');
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('./assets/fonts/georgia.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'Georgia';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f3;
+  gap: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  height: 96px;
+  border-radius: 16px;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  font-size: 30px;
+}
+
+.meme-slider {
+  display: flex;
+  width: 1300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  width: 1280px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+
+.meme__items {
+  position: relative;
+  display: flex;
+  transition: 1s;
+}
+
+.meme__items-item {
+  width: 1280px;
+}
+
+.meme-text-radio {
+  width: 1280px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* ======MEME TEXT======= */
+.text-wrapper {
+  width: 950px;
+  overflow: hidden;
+  height: 96px;
+  border-radius: 16px;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.meme-text {
+  display: flex;
+  position: relative;
+  height: 96px;
+  transition: 1s;
+  align-items: center;
+}
+
+.text-item {
+  width: 930px;
+  text-align: center;
+}
+
+.text-item > p {
+  width: 930px;
+  margin: 0;
+  padding: 0;
+}

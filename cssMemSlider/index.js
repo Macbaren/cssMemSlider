@@ -1,3 +1,46 @@
+const TEXT_A = document.querySelector('#item-a');
+const TEXT_B = document.querySelector('#item-b');
+const TEXT_C = document.querySelector('#item-c');
+const TEXT_D = document.querySelector('#item-d');
+
+const INPUTS = document.querySelectorAll('.state');
+
+const TEXTS = document.querySelectorAll('.text-item');
+
+const CAROUSEL_WINDOW = document.querySelector('.meme__items');
+
+const MEME_TEXT = document.querySelector('.meme-text');
+
+INPUTS.forEach((inp) =>
+  inp.addEventListener('click', (event) => {
+    switch (event.target.id) {
+      case 'button-a':
+        CAROUSEL_WINDOW.style.marginLeft = '0';
+        MEME_TEXT.style.marginLeft = '0';
+        break;
+      case 'button-b':
+        CAROUSEL_WINDOW.style.marginLeft = '-1280px';
+        MEME_TEXT.style.marginLeft = '-930px';
+
+        break;
+      case 'button-c':
+        CAROUSEL_WINDOW.style.marginLeft = '-2560px';
+        MEME_TEXT.style.marginLeft = '-1860px';
+
+        break;
+      case 'button-d':
+        CAROUSEL_WINDOW.style.marginLeft = '-3840px';
+        MEME_TEXT.style.marginLeft = '-2790px';
+
+        break;
+
+      default:
+        break;
+    }
+    console.log('event', event.target.id);
+  })
+);
+
 // const BTN_LEFT = document.querySelector('#btn-left');
 // const BTN_RIGHT = document.querySelector('#btn-right');
 // const CAROUSEL = document.querySelector('#carousel');

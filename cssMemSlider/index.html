@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Mem Slider</title>
   </head>
   <body>
@@ -34,60 +34,90 @@
 
     <!-- +++++FOOTER+++++ -->
     <footer class="meme-text-radio">
-      <div class="meme-text">
-        <p class="text-item">I will</p>
+      <div class="text-wrapper">
+        <div class="meme-text">
+          <div class="text-item" id="item-a">
+            <p>
+              and I'll show you now who the bugs were prepared from on the
+              project
+            </p>
+          </div>
+          <div class="text-item" id="item-b">
+            <p>
+              and if a preventive update from mentor had not been applied 6
+              hours before the deployment
+            </p>
+          </div>
+          <div class="text-item" id="item-c">
+            <p>
+              4 PR - I will now show github, they would have fuckuped our demo
+            </p>
+          </div>
+          <div class="text-item" id="item-d">
+            <p>
+              therefore, we did not unleash this refactoring, our conscience is
+              clear. It's good that we started!
+            </p>
+          </div>
+        </div>
       </div>
+
       <div class="radiogroup">
         <div class="wrapper">
-          <input class="state" type="radio" name="app" id="a" value="a" />
-          <label class="label" for="a">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-a"
+            value="a"
+            checked
+          />
+          <label class="label" for="button-a">
             <div class="indicator"></div>
             <span class="text"></span>
           </label>
         </div>
         <div class="wrapper">
-          <input class="state" type="radio" name="app" id="b" value="b" />
-          <label class="label" for="b">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-b"
+            value="b"
+          />
+          <label class="label" for="button-b">
             <div class="indicator"></div>
             <span class="text"></span>
           </label>
         </div>
         <div class="wrapper">
-          <input class="state" type="radio" name="app" id="c" value="c" />
-          <label class="label" for="c">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-c"
+            value="c"
+          />
+          <label class="label" for="button-c">
             <div class="indicator"></div>
             <span class="text"></span>
           </label>
         </div>
         <div class="wrapper">
-          <input class="state" type="radio" name="app" id="d" value="d" />
-          <label class="label" for="d">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-d"
+            value="d"
+          />
+          <label class="label" for="button-d">
             <div class="indicator"></div>
             <span class="text"></span>
           </label>
         </div>
       </div>
-      <!-- <div class="form_radio">
-          <input id="radio-1" type="radio" name="radio" value="1" checked />
-          <label for="radio-1"></label>
-        </div>
-
-        <div class="form_radio">
-          <input id="radio-2" type="radio" name="radio" value="2" />
-          <label for="radio-2"></label>
-        </div>
-
-        <div class="form_radio">
-          <input id="radio-3" type="radio" name="radio" value="3" />
-          <label for="radio-3"></label>
-        </div>
-
-        <div class="form_radio">
-          <input id="radio-4" type="radio" name="radio" value="4" />
-          <label for="radio-4"></label>
-        </div> -->
     </footer>
-
     <script src="../cssMemSlider/index.js"></script>
   </body>
 </html>
