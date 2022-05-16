@@ -37,7 +37,6 @@ const render = () => {
 };
 
 window.addEventListener('resize', (event) => {
-  console.log(event.target.innerWidth);
   if (event.target.innerWidth < 1280) {
     widthContent = 300;
     CAROUSEL_WINDOW.style.marginLeft = '0';
