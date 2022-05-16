@@ -40,6 +40,10 @@
   overflow: hidden;
 }
 
+.label:hover .indicator {
+  box-shadow: -8px -4px 8px 0px #d1d9e6, 8px 4px 12px 0px #ffffff;
+}
+
 .indicator::before,
 .indicator::after {
   content: '';
@@ -74,4 +78,47 @@
 
 .label:hover .text {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1279px) {
+  .radiogroup {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+  }
+
+  .wrapper {
+    margin: 4px 0;
+  }
+
+  .label {
+    width: 30px;
+    height: 30px;
+  }
+
+  .indicator {
+    height: 15px;
+    width: 15px;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #d1d9e6;
+  }
+
+  .label:hover .indicator {
+    box-shadow: -4px -2px 4px 0px #d1d9e6, 4px 2px 6px 0px #ffffff;
+  }
+
+  .indicator::before {
+    box-shadow: -2px -1px 2px 0px #d1d9e6, 2px 1px 4px 0px #fff;
+  }
+
+  .indicator::after {
+    box-shadow: -2px -1px 2px 0px #fff, 2px 1px 4px 0px #d1d9e6;
+  }
+
+  .state:focus ~ .label .text {
+    transform: translate3d(4px, 0, 0);
+    opacity: 1;
+  }
 }

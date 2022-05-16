@@ -40,13 +40,13 @@ body {
 
 .meme-slider {
   display: flex;
-  width: 1300px;
+  width: 900px;
   justify-content: center;
   align-items: center;
 }
 
 .carousel-wrapper {
-  width: 1280px;
+  width: 900px;
   overflow: hidden;
   border-radius: 16px;
   background: #ecf0f3;
@@ -60,11 +60,15 @@ body {
 }
 
 .meme__items-item {
-  width: 1280px;
+  width: 900px;
+}
+.meme__items-item > img {
+  width: 900px;
+  object-fit: contain;
 }
 
 .meme-text-radio {
-  width: 1280px;
+  width: 1260px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -72,7 +76,7 @@ body {
 
 /* ======MEME TEXT======= */
 .text-wrapper {
-  width: 950px;
+  width: 920px;
   overflow: hidden;
   height: 96px;
   border-radius: 16px;
@@ -84,6 +88,7 @@ body {
 
 .meme-text {
   display: flex;
+  gap: 25px;
   position: relative;
   height: 96px;
   transition: 1s;
@@ -91,12 +96,81 @@ body {
 }
 
 .text-item {
-  width: 930px;
+  width: 900px;
   text-align: center;
 }
 
 .text-item > p {
-  width: 930px;
+  width: 880px;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 1279px) {
+  body {
+    gap: 20px;
+  }
+
+  .header {
+    padding: 0 15px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+  }
+
+  .header > h1 {
+    font-size: 20px;
+  }
+
+  .meme-slider {
+    width: 300px;
+  }
+
+  .carousel-wrapper {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .meme__items-item {
+    width: 300px;
+  }
+
+  .meme__items-item > img {
+    width: 300px;
+    object-fit: contain;
+  }
+
+  .meme-text-radio {
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ======MEME TEXT======= */
+  .text-wrapper {
+    width: 300px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .meme-text {
+    height: 48px;
+    gap: 20px;
+  }
+
+  .text-item {
+    width: 300px;
+  }
+
+  .text-item > p {
+    width: 280px;
+  }
 }
