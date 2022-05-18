@@ -70,7 +70,7 @@ body {
 
 .slides {
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -214,6 +214,83 @@ a.slide__next,
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (max-width: 1279px) {
+  body {
+    gap: 20px;
+  }
+
+  .header {
+    padding: 0 15px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+  }
+
+  .header > h1 {
+    font-size: 20px;
+  }
+
+  .slider {
+    max-width: 300px;
+  }
+
+  .meme-slider {
+    width: 300px;
+  }
+
+  .carousel-wrapper {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .text-wrapper {
+    max-width: 300px;
+    font-size: 15px;
+  }
+
+  .meme__items-item {
+    width: 300px;
+  }
+
+  .meme__items-item > img {
+    width: 300px;
+    object-fit: contain;
+  }
+
+  .meme-text-radio {
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+/* ======MEME TEXT======= */
+/* .text-wrapper {
+    width: 300px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .meme-text {
+    height: 48px;
+    gap: 20px;
+  }
+
+  .text-item {
+    width: 300px;
+  }
+
+  .text-item > p {
+    width: 280px;
+  }
 
 /* +++++FIN NEW+++++ */
 
