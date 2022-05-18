@@ -1,0 +1,124 @@
+/* =====RADIO BUTTON===== */
+
+.radiogroup {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+
+.wrapper {
+  margin: 8px 0;
+}
+
+.state {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1e-5;
+  pointer-events: none;
+}
+
+.label {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #394a56;
+}
+
+.indicator {
+  position: relative;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+  overflow: hidden;
+}
+
+.label:hover .indicator {
+  box-shadow: -8px -4px 8px 0px #d1d9e6, 8px 4px 12px 0px #ffffff;
+}
+
+.indicator::before,
+.indicator::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.indicator::before {
+  box-shadow: -4px -2px 4px 0px #d1d9e6, 4px 2px 8px 0px #fff;
+}
+
+.indicator::after {
+  background-color: #ecf0f3;
+  box-shadow: -4px -2px 4px 0px #fff, 4px 2px 8px 0px #d1d9e6;
+  transform: scale3d(1, 1, 1);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.state:checked ~ .label .link > .indicator::after {
+  transform: scale3d(0.975, 0.975, 1) translate3d(0, 10%, 0);
+  opacity: 0;
+}
+
+.state:focus ~ .label .link > .text {
+  transform: translate3d(8px, 0, 0);
+  opacity: 1;
+}
+
+.label:hover .text {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1279px) {
+  .radiogroup {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px #d1d9e6 inset, -2px -2px 2px 0px #ffffff inset;
+  }
+
+  .wrapper {
+    margin: 4px 0;
+  }
+
+  .label {
+    width: 30px;
+    height: 30px;
+  }
+
+  .indicator {
+    height: 15px;
+    width: 15px;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #d1d9e6;
+  }
+
+  .label:hover .indicator {
+    box-shadow: -4px -2px 4px 0px #d1d9e6, 4px 2px 6px 0px #ffffff;
+  }
+
+  .indicator::before {
+    box-shadow: -2px -1px 2px 0px #d1d9e6, 2px 1px 4px 0px #fff;
+  }
+
+  .indicator::after {
+    box-shadow: -2px -1px 2px 0px #fff, 2px 1px 4px 0px #d1d9e6;
+  }
+
+  .state:focus ~ .label .text {
+    transform: translate3d(4px, 0, 0);
+    opacity: 1;
+  }
+}

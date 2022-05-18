@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Mem Slider</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <header class="header">
+        <h1 class="title">RS CSS Meme Slider</h1>
+      </header>
+      <div class="slider">
+        <div class="slides">
+          <div id="slides__1" class="slide">
+            <div class="meme__items-item" id="item-start">
+              <img src="assets/img/meme1.jpg" alt="meme1" />
+            </div>
+            <a class="slide__prev" href="#slides__4" title="Next"></a>
+            <a class="slide__next" href="#slides__2" title="Next"></a>
+          </div>
+          <div id="slides__2" class="slide">
+            <div class="meme__items-item" id="item-start">
+              <img src="assets/img/meme2.jpg" alt="meme2" />
+            </div>
+            <a class="slide__prev" href="#slides__1" title="Prev"></a>
+            <a class="slide__next" href="#slides__3" title="Next"></a>
+          </div>
+          <div id="slides__3" class="slide">
+            <div class="meme__items-item" id="item-start">
+              <img src="assets/img/meme3.jpg" alt="meme3" />
+            </div>
+            <a class="slide__prev" href="#slides__2" title="Prev"></a>
+            <a class="slide__next" href="#slides__4" title="Next"></a>
+          </div>
+          <div id="slides__4" class="slide">
+            <div class="meme__items-item" id="item-start">
+              <img src="assets/img/meme4.jpg" alt="meme4" />
+            </div>
+            <a class="slide__prev" href="#slides__3" title="Prev"></a>
+            <a class="slide__next" href="#slides__1" title="Prev"></a>
+          </div>
+        </div>
+      </div>
+      <footer class="meme-text-radio">
+        <div class="text-wrapper">
+          <div class="meme-text">
+            <div class="text-item" id="#slides__1">
+              <p>
+                And I'll show you now who the bugs were prepared from on the
+                project...
+              </p>
+            </div>
+            <div class="text-item" id="#slides__2">
+              <p>
+                ...and if a preventive update from mentor had not been applied 6
+                hours before the deployment...
+              </p>
+            </div>
+            <div class="text-item" id="#slides__3">
+              <p>
+                ...4 PR - I will now show github, they would have fuckuped our
+                demo...
+              </p>
+            </div>
+            <div class="text-item" id="#slides__4">
+              <p>
+                ...therefore, we did not unleash this refactoring, our
+                conscience is clear. It's good that we started!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="radiogroup">
+          <div class="wrapper">
+            <input
+              class="state"
+              type="radio"
+              name="app"
+              id="button-a"
+              value="a"
+              checked
+            />
+            <label class="label" for="button-a">
+              <a class="link" href="#slides__1">
+                <div class="indicator"></div>
+                <span class="text"></span>
+              </a>
+            </label>
+          </div>
+          <div class="wrapper">
+            <input
+              class="state"
+              type="radio"
+              name="app"
+              id="button-b"
+              value="b"
+            />
+            <label class="label" for="button-b">
+              <a class="link" href="#slides__2">
+                <div class="indicator"></div>
+                <span class="text"></span>
+              </a>
+            </label>
+          </div>
+          <div class="wrapper">
+            <input
+              class="state"
+              type="radio"
+              name="app"
+              id="button-c"
+              value="c"
+            />
+            <label class="label" for="button-c">
+              <a class="link" href="#slides__3">
+                <div class="indicator"></div>
+                <span class="text"></span>
+              </a>
+            </label>
+          </div>
+          <div class="wrapper">
+            <input
+              class="state"
+              type="radio"
+              name="app"
+              id="button-d"
+              value="d"
+            />
+            <label class="label" for="button-d">
+              <a class="link" href="#slides__4">
+                <div class="indicator"></div>
+                <span class="text"></span>
+              </a>
+            </label>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- +++++SLIDER++++++ -->
+    <!-- <div class="meme-slider">
+      <div class="carousel-wrapper" id="carousel-wrapper">
+        <div class="meme__items">
+          <div class="meme__items-item" id="item-start">
+            <img src="assets/img/meme1.jpg" alt="meme1" />
+          </div>
+          <div class="meme__items-item" id="item-start">
+            <img src="assets/img/meme2.jpg" alt="meme1" />
+          </div>
+          <div class="meme__items-item" id="item-start">
+            <img src="assets/img/meme3.jpg" alt="meme1" />
+          </div>
+          <div class="meme__items-item" id="item-start">
+            <img src="assets/img/meme4.jpg" alt="meme1" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- +++++FOOTER+++++ -->
+    <!-- <footer class="meme-text-radio">
+      <div class="text-wrapper">
+        <div class="meme-text">
+          <div class="text-item" id="item-a">
+            <p>
+              And I'll show you now who the bugs were prepared from on the
+              project...
+            </p>
+          </div>
+          <div class="text-item" id="item-b">
+            <p>
+              ...and if a preventive update from mentor had not been applied 6
+              hours before the deployment...
+            </p>
+          </div>
+          <div class="text-item" id="item-c">
+            <p>
+              ...4 PR - I will now show github, they would have fuckuped our
+              demo...
+            </p>
+          </div>
+          <div class="text-item" id="item-d">
+            <p>
+              ...therefore, we did not unleash this refactoring, our conscience
+              is clear. It's good that we started!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="radiogroup">
+        <div class="wrapper">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-a"
+            value="a"
+            checked
+          />
+          <label class="label" for="button-a">
+            <div class="indicator"></div>
+            <span class="text"></span>
+          </label>
+        </div>
+        <div class="wrapper">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-b"
+            value="b"
+          />
+          <label class="label" for="button-b">
+            <div class="indicator"></div>
+            <span class="text"></span>
+          </label>
+        </div>
+        <div class="wrapper">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-c"
+            value="c"
+          />
+          <label class="label" for="button-c">
+            <div class="indicator"></div>
+            <span class="text"></span>
+          </label>
+        </div>
+        <div class="wrapper">
+          <input
+            class="state"
+            type="radio"
+            name="app"
+            id="button-d"
+            value="d"
+          />
+          <label class="label" for="button-d">
+            <div class="indicator"></div>
+            <span class="text"></span>
+          </label>
+        </div>
+      </div>
+    </footer> -->
+    <script src="../cssMemSlider/index.js"></script>
+  </body>
+</html>
